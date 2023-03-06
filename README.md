@@ -1,5 +1,7 @@
 # fibs-hello-world
 
+> NOTE: this stuff is all work in progress and will break frequently!
+
 The mininal [fibs](https://github.com/floooh/fibs) hello-world project.
 
 To try this out, first [install Deno](https://deno.land/manual@v1.31.1/getting_started/installation), then install the fibs main script as Deno tool:
@@ -21,4 +23,13 @@ Then to build and run, from within the ```fips-hello-world``` root directory:
 ...
 > fibs run hello
 Hello World!
+```
+
+The following two commands are probably the most 'enlightening' to get an idea about the fibs project:
+
+```
+> fibs help
+...
+> fibs diag project
+...
 ```
