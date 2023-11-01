@@ -1,35 +1,29 @@
 # fibs-hello-world
 
-> NOTE: this stuff is all work in progress and will break frequently!
+A minimal fibs example.
 
-The mininal [fibs](https://github.com/floooh/fibs) hello-world project.
+## How to build and run
 
-To try this out, first [install Deno](https://deno.land/manual@v1.31.1/getting_started/installation), then install the fibs main script as Deno tool:
+First, install Deno: https://docs.deno.com/runtime/manual/getting_started/installation
 
-```bash
-deno install --allow-all https://deno.land/x/fibs@v1.0.0/fibs.ts
-```
-
-If not happened yet, you'll also need to add a directory to your PATH environment variable (see the output of ```deno install``` for details).
-
-Eventually, I'll try to come up with a more convenient process for this initial setup process.
-
-...if you don't trust fibs, you can remove all the ```--allow-all``` arg, Deno will then ask for individual permissions.
-
-Then to build and run, from within the ```fips-hello-world``` root directory:
-
-```bash
-> fibs build
-...
-> fibs run hello
-Hello World!
-```
-
-The following two commands are probably the most 'enlightening' to get an idea about the fibs project:
+Next, clone, build and run like this:
 
 ```
-> fibs help
-...
-> fibs diag project
-...
+git clone https://github.com/floooh/fibs-hello-world
+cd fibs-test
+./fibs build
+./fibs list targets --exe
+./fibs run hello
+```
+
+If anything goes wrong run `./fibs diag tools` and follow the instructions.
+
+To build and run for WASI, install the optional WASI SDK first:
+
+```
+./fibs wasisdk install
+./fibs config wasi-make-debug
+./fibs build
+./fibs list targets --exe
+./fibs run hello
 ```
