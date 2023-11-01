@@ -1,4 +1,4 @@
-import * as fibs from 'https://deno.land/x/fibs@v1.0.0/mod.ts'
+import * as fibs from 'https://deno.land/x/fibs/mod.ts'
 //import * as fibs from '../fibs/mod.ts';
 
 export const project: fibs.ProjectDesc = {
