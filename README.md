@@ -7,7 +7,7 @@ The mininal [fibs](https://github.com/floooh/fibs) hello-world project.
 To try this out, first [install Deno](https://deno.land/manual@v1.31.1/getting_started/installation), then install the fibs main script as Deno tool:
 
 ```bash
-deno install --allow-all https://raw.githubusercontent.com/floooh/fibs/main/fibs.ts
+deno install --allow-all https://deno.land/x/fibs@v1.0.0/fibs.ts
 ```
 
 If not happened yet, you'll also need to add a directory to your PATH environment variable (see the output of ```deno install``` for details).

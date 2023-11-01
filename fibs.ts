@@ -1,8 +1,16 @@
-import * as fibs from 'https://raw.githubusercontent.com/floooh/fibs/main/mod.ts'
+import * as fibs from 'https://deno.land/x/fibs@v1.0.0/mod.ts'
 //import * as fibs from '../fibs/mod.ts';
 
 export const project: fibs.ProjectDesc = {
     name: 'hello-world',
+    targets: [
+        {
+            name: 'hello',
+            type: 'plain-exe',
+            sources: () => ['hello.c']
+        }
+    ],
+    // add optional WASI platform support
     imports: [
         {
             name: 'platforms',
@@ -10,11 +18,4 @@ export const project: fibs.ProjectDesc = {
             import: [ 'wasi.ts' ],
         },
     ],
-    targets: [
-        {
-            name: 'hello',
-            type: 'plain-exe',
-            sources: () => ['hello.c']
-        }
-    ]
 }
