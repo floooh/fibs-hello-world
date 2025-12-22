@@ -1,6 +1,6 @@
-import { fibs, Builder, Configurer } from 'https://raw.githubusercontent.com/floooh/fibs/master/index.ts';
+import { main, Builder, Configurer } from 'https://raw.githubusercontent.com/floooh/fibs/master/index.ts';
 
-fibs(import.meta);
+main(import.meta);
 
 export function configure(c: Configurer): void {
     c.addImport({
