@@ -1,3 +1,4 @@
+// deno-lint-ignore no-unversioned-import
 import { Builder, Configurer } from 'jsr:@floooh/fibs';
 
 export function configure(c: Configurer): void {
