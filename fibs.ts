@@ -3,7 +3,7 @@ import { Builder, Configurer } from 'jsr:@floooh/fibs@^1';
 export function configure(c: Configurer): void {
     c.addImport({
         name: "wasisdk",
-        url: "https://github.com/floooh/fibs-platforms",
+        url: "https://github.com/floooh/fibs-extras",
         files: ["wasi.ts"],
     });
 }
