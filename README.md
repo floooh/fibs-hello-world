@@ -10,7 +10,7 @@ Next, clone, build and run like this:
 
 ```
 git clone https://github.com/floooh/fibs-hello-world
-cd fibs-test
+cd fibs-hello-world
 ./fibs build
 ./fibs list targets --exe
 ./fibs run hello
